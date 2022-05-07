@@ -8,7 +8,7 @@ import { ContactReactiveComponent } from "./contact-reactive/contact-reactive.co
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'contact-reactive', component: ContactReactiveComponent},
-    {path: 'contact-template', component: ContactComponent},
+    {path: 'contact-template/:id', component: ContactComponent},
     {path: 'home', component: HomeComponent},
     {path: '**', component: PagenotfoundComponent}
 ];
